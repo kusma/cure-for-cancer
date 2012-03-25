@@ -1,6 +1,6 @@
 #include "kancr.h"
 
-MeshPlugin::Attatch( Mesh* mesh ){
+void MeshPlugin::Attatch( Mesh* mesh ){
 	assert(mesh);
 	this->owner=mesh;
 	//if(this->vertex_list)

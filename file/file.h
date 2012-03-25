@@ -25,8 +25,8 @@ private:
 public:
 	//FileLoader(char* archive);
 	static FileLoader* instance();
-	SetArchive(char* archive);
-	SetPassword(char* password);
+	void SetArchive(char* archive);
+	void SetPassword(char* password);
 	File* GetFile(char* filename);
 };
 

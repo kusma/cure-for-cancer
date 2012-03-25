@@ -82,7 +82,7 @@ void print_list(ArchiveList_struct *list){
 #endif
 
 
-FileLoader::SetArchive(char* archive){
+void FileLoader::SetArchive(char* archive){
 	this->archive = archive;
 #ifdef _DEBUG
 	ArchiveList_struct *List = NULL;
@@ -93,7 +93,7 @@ FileLoader::SetArchive(char* archive){
 #endif
 }
 
-FileLoader::SetPassword(char* password){
+void FileLoader::SetPassword(char* password){
 	this->password = password;
 }
 

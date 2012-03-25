@@ -14,7 +14,7 @@ public:
 	~MeshPlugin(){
 		if(vertex_list) delete[] vertex_list;
 	}
-	Attatch( Mesh* mesh );
+	void Attatch( Mesh* mesh );
 	Mesh *owner;
 	virtual void Apply()=0;
 	Vertex *vertex_list;
